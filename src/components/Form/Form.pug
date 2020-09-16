@@ -1,0 +1,20 @@
+.form
+  .form__title GET IN TOUCH NOW
+  form.form__form(action="")
+    input.form__input(type="text" id="name" placeholder="YOUR NAME" required)
+    input.form__input(type="number" id="phoneNumber" placeholder="YOUR CONTACT NAMBER" required)
+    input.form__input(type="text" id="postCode" placeholder="POST CODE" required)
+    .form__text BEST FOR US TO CALL YOU : 
+    .form__option
+      input.form__radio(type="radio" id="morning" name="time")
+      label.form__label(for="morning") MORNING
+    .form__option
+      input.form__radio(type="radio" id="afternoon" name="time")
+      label.form__label(for="afternoon") AFTERNOON
+    .form__option
+      input.form__radio(type="radio" id="evening" name="time")
+      label.form__label(for="evening") EVENING
+    input.form__input(type="text" id="message" placeholder="MESSAGE")
+    input.form__checkbox(type="checkbox" id="agree")
+    label.form__agree(for="agree") Any information submitted be processed(...)
+    button.form__button(type="submit") START NOW

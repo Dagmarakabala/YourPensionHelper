@@ -1,0 +1,56 @@
+.form 
+  display: block
+  padding: 30px 
+  max-width: 300px
+  margin-top: 275px
+  background-color: $light-blue
+  
+  +max($bp-md)
+    margin: auto
+  &__title
+    +font-merri
+    font-size: 24px
+    color: $blue-black
+
+  &__input
+    width: 100%
+    height: 45px
+    background-color: $white
+    padding: 10px 
+    margin: 5px 0px
+    border: 0
+    color: $blue
+    font-size: 14px
+
+    &::placeholder
+      font-size: 14px
+      color: $blue
+
+    &#message
+      height: 85px
+
+  &__text 
+    font-size: 14px
+    color: $blue-black
+
+  &__radio
+    margin: 5px 0px
+  &__label 
+    color: $blue
+    font-size: 14px
+
+  &__checkbox 
+    margin: 10px 0px
+
+  &__agree 
+    font-size: 10px
+    
+  &__button
+    width: 100%
+    padding: 25px 0px
+    border: 0
+    background-color: $orange
+    font-size: 18px
+    font-weight: bold
+    color: $blue-black
+    text-align: center

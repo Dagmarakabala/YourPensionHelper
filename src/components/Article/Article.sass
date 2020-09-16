@@ -1,0 +1,59 @@
+.article
+  display: block
+  max-width: 100%
+
+  &__container 
+    display: block 
+    max-width: 1280px 
+    margin: auto
+    padding: 80px 0px
+
+  &__title
+    +font-merri 
+    font-size: 36px
+    font-weight: bold 
+    text-transform: uppercase
+    color: $blue-black
+
+  &__secondTitle 
+    font-size: 30px
+    color: $black
+
+  &__img
+    max-width: 100%
+    object-fit: contain
+    align-self: flex-start
+
+  &__Section
+    display: flex
+    flex-direction: column
+    gap: 40px
+    justify-content: flex-start
+    text-align: justify
+    font-size: 24px
+
+    +max($bp-xlg)
+      padding: 0px 10px 
+
+  &__quote 
+    display: flex
+    flex-wrap: nowrap 
+    align-items: center
+    color: $blue
+
+  &__quotation 
+    padding-right: 20px
+    max-width: 50px
+    object-fit: contain
+    
+  &__quoteText 
+    font-size: 24px
+    padding-left: 20px
+    border-left: 1px solid $blue
+
+  &__imgTitle
+    font-weight: bold
+    color: $more-dark-blue
+
+b 
+  font-weight: bold

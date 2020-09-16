@@ -1,0 +1,48 @@
+.menu
+  display: block
+  text-align: right
+
+  +max($bp-lg)
+    transition: right 0.5s ease
+    background: $white
+    padding: 30px 5px 30px 30px
+    cursor: pointer
+    right: -100%
+    position: fixed
+    top: 0
+    max-width: 90%
+    z-index: 1
+    text-align: left
+
+  &.expanded
+    left: auto
+    right: 0
+
+  &__list
+    display: block 
+    
+    +max($bp-lg)
+      padding-top: 50px
+      padding-bottom: 15px
+
+  &__item
+    display: inline-block
+    position: relative
+    padding: 0px 10px
+    color: $white
+    font-size: 18px
+
+    +max($bp-lg)
+      display: block
+      padding: 5px 20px
+
+  &__link 
+    color: $blue-black
+    text-decoration: none
+
+  &__logo 
+    display: none
+    +max($bp-sm)
+      display: block
+      max-width: 150px
+      padding: 10px
