@@ -1,0 +1,86 @@
+.latestArticlesItem
+  display: block
+  position: relative
+  width: 100%
+  padding: 60px 70px 30px 70px
+  border: 1px solid $blue
+
+  +max($bp-md)
+    padding: 20px 0px 50px 0px
+
+  &.-main
+    height: 100%
+
+  &__link
+    text-decoration: none
+
+  &__flex
+    display: flex
+    flex-direction: row
+    justify-contain: space-between
+    align-items: flex-start
+
+    +max($bp-md)
+      flex-direction: column
+
+  &.-main > &__link > &__flex
+    flex-direction: column
+
+  &__date
+    display: block
+    position: absolute
+    left: 20px
+    top: 20px
+    padding: 5px 20px
+    background-color: $dark-blue
+    text-align: center
+    color: $white
+
+    +max($bp-md)
+      left: 0px
+      top: 20px
+      
+  &__day 
+    font-size: 30px 
+    font-weight: bold
+
+  &__month 
+    font-size: 24px
+
+  &__img
+    max-width: 50%
+    margin: 0px auto
+    object-fit: contain 
+
+    +max($bp-md)
+      max-width: 100%
+      object-fit: cover
+      margin-bottom: 20px 
+
+  &.-main >  &__link > &__flex > &__img 
+    max-width: 100%
+    object-fit: cover
+    margin-bottom: 20px   
+
+  &__inner
+    text-align: left
+    padding: 0px 10px
+
+    +max($bp-md)
+      padding: 0px
+
+  &.-main >  &__link > &__flex > &__inner 
+    padding: 0px
+
+
+  &__title
+    +font-merri
+    padding-bottom: 20px
+    font-size: 18px
+    font-weight: bold 
+    color: $blue
+
+  &__text
+    font-size: 18px
+    color: $black
+    

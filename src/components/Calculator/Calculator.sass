@@ -1,0 +1,82 @@
+.calculator
+  display: block
+  width: 100%
+
+  &__container
+    +maxWidth
+    padding-top: 80px
+    padding-bottom: 80px
+
+  &__title
+    +title 
+    padding-bottom: 20px
+
+  &__text
+    font-size: 20px
+
+  &__form
+    padding: 80px 0px 0px 0px
+    position: relative
+
+    & > .calculator__text 
+      +font-merri
+      padding: 10px 0px
+      display: inline-block
+      font-size: 24px
+      color: $blue
+
+  &__inner 
+    display: inline-block
+    position: relative
+
+  &__start
+    display: block
+    position: absolute
+    background-color: $dark-blue
+    width: calc(100% - 20px)
+    padding: 10px 0px
+    top: -50px
+    left: 10px
+    font-size: 16px
+    color: $white
+    text-align: center
+
+    &.-displayNone
+      display: none
+
+    &:before
+      display: block
+      position: absolute
+      width: 0
+      height: 0
+      bottom: -15px
+      left: calc(50% - 8px)
+      border: 8px solid transparent
+      border-right-color: $dark-blue
+      content: ""
+      z-index: 2
+      transform: rotate(270deg)
+
+  &__input 
+    +font-merri
+    display: inline-block
+    width: 130px
+    margin: 0px 10px
+    padding: 10px 20px
+    border: 1px solid $dark-blue
+    font-size: 24px
+    color: $blue
+
+    &#pension
+      width: 200px
+
+    &::placeholder
+      +font-merri
+      font-size: 24px
+      color: $blue
+
+  &__button
+    +button
+    display: block
+    padding: 20px
+    margin-top: 30px

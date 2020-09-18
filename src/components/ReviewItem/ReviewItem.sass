@@ -1,0 +1,40 @@
+.reviewItem
+  display: flex
+  max-width: 100%
+  align-items: flex-start
+  gap: 20px
+
+  &__img 
+    max-width: 52px
+    max-height: 52px
+    object-fit: contain 
+    border-radius: 50%
+
+  &__star
+    display: inline
+    max-height: 20px
+    max-width: 20px
+    object-fit: contain
+    margin: 0px 5px
+
+    &.-displayNone
+      display: none
+
+  &__text 
+    font-size: 18px
+    color: $black 
+    font-style: italic
+    padding: 20px 0px
+
+    &.-mainPage
+      color: $white
+
+  &__name
+    font-size: 18px
+    font-weight: bold
+    color: $dark-blue 
+
+    &.-mainPage
+      color: $white
+
+

@@ -1,0 +1,49 @@
+.info 
+  display: block
+  width: 100%
+
+  &__container
+    +maxWidth 
+    padding-top: 80px
+    padding-bottom: 80px
+
+  &__title 
+    +title 
+    text-align: center 
+  
+  &__hr 
+    +hr
+
+  &__text
+    display: inline-block
+    font-size: 30px
+
+    &.-blue
+      display: inline
+      color: $dark-blue
+      margin-left: 5px
+      font-weight: bold
+
+  &__inner 
+    display: flex
+    flex-wrap: wrap
+    margin: auto
+    padding: 30px 0px
+
+  &__footer 
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+
+  &__icon
+    max-width: 36px
+    max-height: 36px 
+    object-fit: contain
+    margin-right: 10px
+
+  &__link 
+    +font-merri
+    font-size: 24px
+    color: $dark-blue 
+    font-weight: bold

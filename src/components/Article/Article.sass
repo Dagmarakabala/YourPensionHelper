@@ -3,17 +3,14 @@
   max-width: 100%
 
   &__container 
-    display: block 
-    max-width: 1280px 
-    margin: auto
+    +maxWidth 
     padding: 80px 0px
 
+    +max($bp-md)
+      padding-bottom: 10px
+
   &__title
-    +font-merri 
-    font-size: 36px
-    font-weight: bold 
-    text-transform: uppercase
-    color: $blue-black
+    +title
 
   &__secondTitle 
     font-size: 30px
@@ -31,9 +28,6 @@
     justify-content: flex-start
     text-align: justify
     font-size: 24px
-
-    +max($bp-xlg)
-      padding: 0px 10px 
 
   &__quote 
     display: flex
@@ -56,4 +50,6 @@
     color: $more-dark-blue
 
 b 
+  display: inline-block
   font-weight: bold
+  padding: 0px 2px

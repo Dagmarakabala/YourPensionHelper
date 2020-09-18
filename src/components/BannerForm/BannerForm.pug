@@ -1,0 +1,21 @@
+.bannerForm
+  .bannerForm__head
+    .bannerForm__title
+      b GET FREE 
+      | PENSION ADVICE
+    .bannerForm__title.-small WE'LL CALL YOU BACK
+    .bannerForm__title.-orange SHORTLY
+  hr.bannerForm__hr 
+  form.bannerForm__form(action="")
+    .bannerForm__text YOUR NAME
+    input.bannerForm__input(id="name" type="text", required)
+    .bannerForm__text YOUR CONTACT NUMBER
+    input.bannerForm__input(id="phoneNumber" type="number", required)
+    .bannerForm__text POST CODE
+    input.bannerForm__input(id="postCode" type="text", required)
+    .bannerForm__info
+      img.bannerForm__icon(src="./assets/images/BannerForm/padlock.png")
+      .bannerForm__text GDPR COMPLIANT. PLEASE VIEW OUR 
+        a.bannerForm__link(href="") PRIVACY POLICY
+    button.bannerForm__button(type="submit") SEND NOW
+    

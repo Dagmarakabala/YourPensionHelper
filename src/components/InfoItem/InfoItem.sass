@@ -1,0 +1,32 @@
+.infoItem
+  display: block
+  padding: 50px 20px 
+  max-width: 25%
+  border: 2px solid $grey
+  text-align: center
+  
+  +max($bp-md)
+    max-width: 50%
+
+  +max($bp-xs)
+    max-width: 100%
+
+  &__link
+    text-decoration: none
+
+  &__img
+    max-width: 100%
+    margin: auto
+    object-fit: contain
+
+  &__title
+    +font-merri
+    padding: 20px 0px
+    font-size: 24px
+    color: $dark-blue
+    font-weight: bold
+    
+
+  &__text 
+    font-size: 18px
+    color: $black

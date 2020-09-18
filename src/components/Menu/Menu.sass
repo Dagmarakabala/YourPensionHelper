@@ -3,16 +3,17 @@
   text-align: right
 
   +max($bp-lg)
+    position: fixed
     transition: right 0.5s ease
     background: $white
     padding: 30px 5px 30px 30px
-    cursor: pointer
     right: -100%
-    position: fixed
     top: 0
     max-width: 90%
+    box-shadow: 5px 0px 15px 5px $blue
     z-index: 1
     text-align: left
+    cursor: pointer
 
   &.expanded
     left: auto

@@ -1,0 +1,32 @@
+.reviews 
+  display: block
+  width: 100%
+  
+  &.-mainPage 
+    background: url("../images/Reviews/background.png")
+    background-repeat: round
+
+  &__container 
+    +maxWidth 
+    display: flex
+    gap: 50px
+    padding-top: 80px 
+    padding-bottom: 80px
+    align-items: flex-start
+    justify-content: space-between
+
+    +max($bp-sm)
+      flex-direction: column
+      align-items: center
+      padding-top: 30px
+      padding-bottom: 30px
+
+  &__img 
+    max-width: 100%
+    object-fit: contain
+
+  &__inner 
+    display: flex 
+    flex-direction: column
+    gap: 40px
+
