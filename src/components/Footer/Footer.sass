@@ -69,16 +69,20 @@
 
   &__list
     list-style-position: inside
-    
+  
     & > li:before
-      content: ">"
-      padding-right: 5px
-      color: $white
-      font-weight: bold
-      font-size: 16px
-
+      width: 10px 
+      height: 10px
+      content: " "
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: url("../images/Footer/arrow.png") no-repeat
+      
   &__element
-    padding-bottom: 5px
+    padding: 5px 5px 5px 15px
+    position: relative
 
   &__link
     text-decoration: none
